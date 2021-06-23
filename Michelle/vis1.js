@@ -1,5 +1,5 @@
 const svgHeight = 465;
-const svgWidth = 700;
+const svgWidth = 900;
 
 const svg = d3.select('.vis1SVG');
 
@@ -9,7 +9,7 @@ var numberEdge = 65; // CHANGED FOR THIS VIZ BECAUSE NUMBERS BIG
 
 var margin = {
     top: 0, // top margin
-    right: -40, // right margin
+    right: 160, // right margin
     left: numberEdge,
     bottom: nameEdgeBottom
 }
@@ -86,23 +86,23 @@ d3.csv("Michelle_Lam1.csv",
                 .attr("width", 125)
                 .attr("height", 50)
                 .attr("x", 10)
-                .attr("y", -22)
+                .attr("y", -2)
                 .attr("rx", 4)
                 .attr("ry", 4);
 
             focus.append("text")
                 .attr("class", "tooltip-date")
                 .attr("x", 18)
-                .attr("y", -2);
+                .attr("y", 18);
 
             focus.append("text")
                 .attr("x", 18)
-                .attr("y", 18);
+                .attr("y", 38);
 
             focus.append("text")
                 .attr("class", "tooltip-cases")
                 .attr("x", 18)
-                .attr("y", 18);
+                .attr("y", 38);
 
             graph1.append("rect")
                 .attr("class", "overlay")
@@ -204,23 +204,23 @@ d3.csv("Michelle_Lam2.csv",
             .attr("width", 120)
             .attr("height", 50)
             .attr("x", 10)
-            .attr("y", -22)
+            .attr("y", -2)
             .attr("rx", 4)
             .attr("ry", 4);
 
         focus.append("text")
             .attr("class", "tooltip-date")
             .attr("x", 18)
-            .attr("y", -2);
+            .attr("y", 18);
 
         focus.append("text")
             .attr("x", 18)
-            .attr("y", 18);
+            .attr("y", 38);
 
         focus.append("text")
             .attr("class", "tooltip-cases")
             .attr("x", 18)
-            .attr("y", 18);
+            .attr("y", 38);
 
         graph2.append("rect")
             .attr("class", "overlay")
